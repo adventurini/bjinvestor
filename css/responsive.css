@@ -1,0 +1,219 @@
+/* Battle Juice — mobile / tablet layout (loads after inline page styles) */
+
+@media (max-width: 960px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    padding-top: 110px !important;
+  }
+
+  nav {
+    height: auto !important;
+    min-height: 56px;
+    padding: 0.65rem 1rem !important;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    align-items: center;
+  }
+
+  .nav-logo {
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.55rem 0.9rem !important;
+    justify-content: flex-start;
+    padding-top: 0.55rem;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .nav-links a {
+    font-size: 0.68rem !important;
+    letter-spacing: 0.07em !important;
+  }
+
+  .nav-cta {
+    margin-left: auto;
+    padding: 0.38rem 0.75rem !important;
+    font-size: 0.65rem !important;
+  }
+
+  section:not(#hero) {
+    padding: 3.25rem 1.1rem !important;
+  }
+
+  section:not(#hero)[style*="7rem 4rem"],
+  section:not(#hero)[style*="7rem 4rem;"] {
+    padding: 3.25rem 1.1rem !important;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.85rem;
+    padding: 1.35rem 1.1rem !important;
+  }
+
+  .page-nav .next {
+    font-size: 1.2rem !important;
+  }
+
+  footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.65rem;
+    padding: 1.35rem 1.1rem !important;
+  }
+
+  .g2,
+  .g3,
+  .g4,
+  .stat-grid,
+  .photo-grid,
+  .round-cards,
+  .fi,
+  .why-grid,
+  .moat-hero,
+  .moat-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .chars-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .flavor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  /* Inline layout grids (product, roadmap, traction, market, invest) */
+  div[style*="display:grid"][style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fb {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.85rem;
+  }
+
+  .contact-row {
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
+  }
+
+  .hero-btns {
+    flex-direction: column !important;
+    width: 100%;
+    max-width: 20rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .hero-glow {
+    width: min(92vw, 26rem) !important;
+    height: min(92vw, 26rem) !important;
+  }
+
+  .hero-tag {
+    letter-spacing: 0.18em !important;
+    padding: 0 0.5rem;
+  }
+
+  #hero {
+    min-height: unset !important;
+    padding: 5.5rem 0.75rem 4.5rem;
+    margin-top: -64px;
+  }
+
+  .hero-logo {
+    font-size: clamp(2.75rem, 15vw, 7rem) !important;
+  }
+
+  .tam-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.35rem !important;
+  }
+
+  .tam-lbl {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .tam-val {
+    width: auto !important;
+    align-self: flex-end;
+  }
+
+  .ev {
+    flex-wrap: wrap !important;
+  }
+
+  .fw-row,
+  .rp {
+    flex-wrap: wrap !important;
+  }
+
+  .card:has(table.ct) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table.ct {
+    font-size: 0.74rem !important;
+  }
+
+  table.ct th,
+  table.ct td {
+    padding: 0.45rem 0.55rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 118px !important;
+  }
+
+  .chars-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .er,
+  .fr {
+    flex-wrap: wrap;
+    row-gap: 0.2rem;
+  }
+
+  .er .k,
+  .fr .fk {
+    width: 100%;
+  }
+
+  .er .v,
+  .fr .fv {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-links {
+    gap: 0.45rem 0.65rem !important;
+  }
+
+  .nav-links a {
+    font-size: 0.62rem !important;
+  }
+}
