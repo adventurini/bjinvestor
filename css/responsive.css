@@ -264,9 +264,20 @@ nav.is-open .nav-toggle-bar:nth-child(3) {
     flex-wrap: wrap !important;
   }
 
-  .fw-row,
-  .rp {
+  .fw-row {
     flex-wrap: wrap !important;
+  }
+
+  /* Numbered rows (e.g. Path to Regional Retail): keep badge + copy on one row; wrap text inside the span */
+  .rp {
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+  }
+
+  .rp > span {
+    min-width: 0;
+    flex: 1 1 auto;
+    line-height: 1.45;
   }
 
   .card:has(table.ct) {
